@@ -7,6 +7,7 @@ import logo from "/images/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -43,21 +44,20 @@ const Navbar = () => {
         </button>
       </div>
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="navbar-mobile">
-          <Link to="/" onClick={toggleMenu}>
-            Home
-          </Link>
-          <Link to="/about" onClick={toggleMenu}>
-            About
-          </Link>
-          <Link to="/menu" onClick={toggleMenu}>
-            Menu
-          </Link>
-          <Link to="/reservations" onClick={toggleMenu}>
-            Reservations
-          </Link>
-          <div className="mobileBtnContainer">
+      <div className={`navbar-mobile ${isOpen ? 'open' : ''}`}>
+        <Link to="/" onClick={toggleMenu}>
+          Home
+        </Link>
+        <Link to="/about" onClick={toggleMenu}>
+          About
+        </Link>
+        <Link to="/menu" onClick={toggleMenu}>
+          Menu
+        </Link>
+        <Link to="/reservations" onClick={toggleMenu}>
+          Reservations
+        </Link>
+        <div className="mobileBtnContainer">
           <button className="btn1">
             <Link to="/orderonline" id="btnLink1" onClick={toggleMenu}>
               Order Online
@@ -68,9 +68,8 @@ const Navbar = () => {
               Login
             </Link>
           </button>
-          </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
