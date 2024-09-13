@@ -67,7 +67,7 @@ function Specials() {
         </div>
       </div>
       <button className="btn1" id="specialsBtn">Order Online</button>
-      <img className="lemonImg" src="/images/lemononly.png" alt="lemon" />
+      
     </section>
   );
 }
