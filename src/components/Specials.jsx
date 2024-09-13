@@ -27,17 +27,17 @@ function Specials() {
         </div>
         <div className="specialBox">
           <div className="specialImg">
-            <img src="/images/greeksalad.jpg" alt="" />
+            <img src="/images/Bruschetta.jpg" alt="" />
           </div>
           <div className="foodHeader">
-            <h2>Greek Salad</h2>
-            <p>$ 12.99</p>
+            <h2>Bruschetta</h2>
+            <p>$ 5.99</p>
           </div>
           <div className="foodInfo">
             <p>
-              The famous greek salad of crispy lettuce, peppers, olives, and our
-              Chicago style feta cheese, garnished with crunchy garlic and
-              rosemary croutons.
+              Our bruschetta is made from grilled bread that has been smeared
+              with garlic and seasoned with salt and olive oil. Topped with
+              tomato and basil.
             </p>
           </div>
           <div className="orderHeader">
@@ -47,17 +47,17 @@ function Specials() {
         </div>
         <div className="specialBox">
           <div className="specialImg">
-            <img src="/images/greeksalad.jpg" alt="" />
+            <img src="/images/lemondessert.jpg" alt="" />
           </div>
           <div className="foodHeader">
-            <h2>Greek Salad</h2>
-            <p>$ 12.99</p>
+            <h2>Lemon Dessert</h2>
+            <p>$ 5.00</p>
           </div>
           <div className="foodInfo">
             <p>
-              The famous greek salad of crispy lettuce, peppers, olives, and our
-              Chicago style feta cheese, garnished with crunchy garlic and
-              rosemary croutons.
+              This comes straight from grandma’s recipe book, every last
+              ingredient has been sourced and is as authentic as can be
+              imagined.
             </p>
           </div>
           <div className="orderHeader">
@@ -66,8 +66,9 @@ function Specials() {
           </div>
         </div>
       </div>
-      <button className="btn1" id="specialsBtn">Order Online</button>
-      
+      <button className="btn1" id="specialsBtn">
+        Order Online
+      </button>
     </section>
   );
 }
