@@ -11,7 +11,7 @@ footer {
   justify-content: center;
   overflow: hidden;
   bottom: 0;
-  position: fixed;
+  position: static;
 }
 
 .footerContainer {

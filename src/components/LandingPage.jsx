@@ -2,8 +2,6 @@ import AboutSection from "./AboutSection"
 import Hero from "./Hero"
 import Specials from "./Specials"
 import Testimonials from "./Testimonials"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
 
 const landingPageStyle = {
   display: 'flex',
@@ -18,14 +16,12 @@ const mainStyle = {
 function LandingPage() {
   return (
     <div style={landingPageStyle}>
-      <Navbar />
       <main style={mainStyle}>
         <Hero />
         <Specials />
         <Testimonials />
         <AboutSection />
       </main>
-      <Footer />
     </div>
   );
 }

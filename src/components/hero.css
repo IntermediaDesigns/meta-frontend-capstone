@@ -1,4 +1,4 @@
-section {
+.hero {
   margin-top: 105px;
   background-color: #495e57;
   width: 100%;
@@ -114,13 +114,10 @@ section {
   }
 }
 
-
-
 @media screen and (max-width: 860px) {
   .heroSection {
     flex-direction: column;
     margin: 0 2rem;
-    
   }
 
   .heroInfo,
@@ -150,7 +147,6 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-
   .heroSection {
     margin: 0 2rem;
   }
