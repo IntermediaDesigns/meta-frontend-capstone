@@ -1,0 +1,144 @@
+/* Footer */
+footer {
+  background: #495e57;
+  width: 100%;
+  min-height: 280px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#lemonOnly {
+  width: 90px;
+  height: 130px;
+  margin-left: 2rem;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contactContainer h3 {
+  color: #f4ce14;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.contactContainer p {
+  color: #edefee;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.contactContainer a {
+  color: #edefee;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.contactContainer a:hover {
+  color: #f4ce14;
+}
+
+.socialIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+}
+
+.socialIconContainer a {
+  color: #f4ce14;
+  transition: transform 0.3s ease;
+}
+
+.socialIconContainer a:hover {
+  color: #edefee;
+  transform: scale(1.2);
+}
+
+#copyright {
+  color: #d9d9d9;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#upArrow1 {
+  margin-right: 4rem;
+  transition: transform 0.3s ease;
+}
+
+#upArrow1:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    height: 100%;
+    padding: 0;
+  }
+
+  #upArrow1 {
+    display: none;
+  }
+
+  #lemonOnly {
+    display: none;
+  }
+
+  #copyright {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

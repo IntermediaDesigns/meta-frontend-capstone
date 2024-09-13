@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { IoClose, IoMenu } from "react-icons/io5";
 import "./navbar.css";
 import logo from "/images/logo.png";
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu Button */}
         <button onClick={toggleMenu} className="navbar-toggle">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <IoClose size={24} /> : <IoMenu size={24} />}
         </button>
       </div>
       {/* Mobile Menu */}

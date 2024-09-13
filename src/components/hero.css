@@ -1,0 +1,182 @@
+section {
+  margin-top: 105px;
+  background-color: #495e57;
+  width: 100%;
+  min-height: 389px;
+}
+
+.heroSection {
+  display: flex;
+  margin: 0 8rem;
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 50%;
+  padding: 2rem;
+}
+
+.heroInfo h1 {
+  font-size: 55px;
+  text-align: center;
+  color: #f4ce14;
+  font-family: "Markazi Text", serif;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+}
+
+.heroInfo h2 {
+  color: #d9d9d9;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.heroInfo p {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
+.heroImgSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.heroImg {
+  width: 413px;
+  height: 407px;
+  border-radius: 16px;
+  border: 1px solid #1e1e1e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translate(25%, 15%);
+}
+
+/* Hero Media Queries */
+@media (min-width: 961px) and (max-width: 1050px) {
+  .heroSection {
+    margin: 0 4rem;
+  }
+
+  .heroInfo h1 {
+    font-size: 48px;
+  }
+
+  .heroInfo h2 {
+    font-size: 36px;
+  }
+
+  .heroInfo p {
+    font-size: 24px;
+  }
+
+  .heroImg {
+    width: 350px;
+    height: 350px;
+    transform: translate(10%, 0%);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 960px) {
+  .heroSection {
+    margin: 0 2rem;
+  }
+
+  .heroInfo {
+    width: 60%;
+  }
+
+  .heroInfo h1 {
+    font-size: 48px;
+  }
+
+  .heroInfo h2 {
+    font-size: 36px;
+  }
+
+  .heroInfo p {
+    font-size: 24px;
+  }
+
+  .heroImg {
+    width: 300px;
+    height: 300px;
+    transform: translate(5%, 0%);
+  }
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .heroSection {
+    flex-direction: column;
+    margin: 0 2rem;
+    
+  }
+
+  .heroInfo,
+  .heroImgSection {
+    width: 100%;
+  }
+
+  .heroInfo {
+    padding: 2rem 0;
+  }
+
+  .heroInfo h1 {
+    font-size: 40px;
+  }
+
+  .heroInfo h2 {
+    font-size: 32px;
+  }
+
+  .heroInfo p {
+    font-size: 20px;
+  }
+
+  .heroImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .heroSection {
+    margin: 0 2rem;
+  }
+
+  .heroInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroInfo h1 {
+    font-size: 36px;
+  }
+
+  .heroInfo h2 {
+    font-size: 28px;
+  }
+
+  .heroInfo p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .heroImg {
+    display: none;
+  }
+}
