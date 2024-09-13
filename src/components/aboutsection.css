@@ -1,0 +1,214 @@
+.aboutSection {
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: 592px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8rem;
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 50%;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+
+.aboutInfo h1 {
+  color: #f4ce14;
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.aboutInfo h2 {
+  color: #495e57;
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.aboutInfo p {
+  color: #1e1e1e;
+  font-family: "Karla", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+}
+
+.aboutImgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  height: 400px;
+}
+
+#restImg {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 230px;
+  height: 315px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#chefImg {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.322);
+  width: 230px;
+  height: 315px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  right: calc(30% - 115px);
+  z-index: 1;
+}
+
+/* About Media Queries */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aboutContainer {
+    margin: 0 6rem;
+  }
+
+  .aboutInfo {
+    padding: 1rem;
+    margin-top: 6rem;
+  }
+
+  .aboutInfo h1 {
+    font-size: 56px;
+  }
+
+  .aboutInfo h2 {
+    font-size: 36px;
+  }
+
+  .aboutInfo p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  #restImg, #chefImg {
+    width: 200px;
+    height: 275px;
+  }
+
+  #restImg {
+    bottom: -15%;
+  }
+
+  #chefImg {
+    top: 25%;
+    right: calc(30% - 100px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    margin: 0 4rem;
+  }
+
+  .aboutInfo {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .aboutInfo h1 {
+    font-size: 48px;
+  }
+
+  .aboutInfo h2 {
+    font-size: 32px;
+  }
+
+  .aboutInfo p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #restImg, #chefImg {
+    width: 180px;
+    height: 250px;
+  }
+
+  #restImg {
+    bottom: -15%;
+  }
+
+  #chefImg {
+    top: 25%;
+    right: calc(30% - 90px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutContainer {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .aboutInfo, .aboutImgs {
+    width: 100%;
+  }
+
+  .aboutInfo {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .aboutInfo h1 {
+    font-size: 40px;
+  }
+
+  .aboutInfo h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+
+  .aboutInfo p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .aboutImgs {
+    height: 300px;
+    margin-top: 2rem;
+  }
+
+  #restImg, #chefImg {
+    width: 150px;
+    height: 200px;
+  }
+
+  #restImg {
+    bottom: 20%;
+    left: 35%;
+  }
+
+  #chefImg {
+    top: 0;
+    right: 5%;
+  }
+}
