@@ -34,16 +34,13 @@ button {
   border: none;
   color: #1e1e1e;
   box-shadow: rgb(0, 0, 0) 0px 7px 16px -12px;
-  transition: 370ms;
   transform: translateY(0);
 }
 
 .btn1:hover {
-  transition: 370ms;
   transform: translateY(-3px);
   padding: 10px 21px;
-  border: 2px solid #1e1e1e;
-  background-color: #fdfdfd;
+  background-color: #fde258;
 }
 
 #btnLink2 {
@@ -65,24 +62,23 @@ button {
   transition: 370ms;
   transform: translateY(-3px);
   padding: 10px 21px;
+  background-color: #6b7f7a;
 }
 
 .mobileBtn2 {
-  background-color: #f4ce14;
+  background-color: #fdfdfd;
   padding: 10px 20px;
   border-radius: 16px;
   border: none;
   box-shadow: rgb(0, 0, 0) 0px 7px 16px -12px;
-  transition: 370ms;
   transform: translateY(0);
 }
 
 .mobileBtn2:hover {
-  transition: 370ms;
   transform: translateY(-3px);
   padding: 10px 21px;
-  border: 2px solid #1e1e1e;
-  background-color: #fdfdfd;
+  border: 2px solid #000;
+  background-color: #f4ce14;
 }
 
 #mobileBtnLink2 {

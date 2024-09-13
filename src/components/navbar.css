@@ -1,0 +1,142 @@
+/* navbar.css */
+.navbar {
+  background-color: transparent;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 145px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1330px;
+  height: 75px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.navbar-logo {
+  width: auto;
+  height: 65px;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.navbar-links a {
+  color: #111827;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Markazi Text";
+  letter-spacing: 0.06em;
+}
+
+.navbar-links a:hover {
+  color: #f4ce14; /* Yellow color on hover */
+  border-bottom: 2px solid #6b7f7a;
+}
+
+.navbar-buttons {
+  display: none;
+  gap: 2rem;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: #111827;
+  cursor: pointer;
+}
+
+.navbar-toggle:hover {
+  transform: scale(1.1);
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  gap: 1rem;
+  background-color: #495e57;
+  max-width: 400px;
+  height: 35vh;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.73);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-mobile a {
+  color: #fdfdfd;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Markazi Text";
+  letter-spacing: 0.06em;
+}
+
+.navbar-mobile a:hover {
+  color: #f4ce14; /* Yellow color on hover */
+  border-bottom: 2px solid #6b7f7a;
+}
+
+.navbar-mobile .btn1,
+.navbar-mobile .btn2 {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+  }
+
+  .navbar-buttons {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-logo {
+    height: 55px;
+  }
+  .navbar-mobile a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar-buttons {
+    gap: 2rem;
+  }
+
+  .navbar-buttons button {
+    font-size: 20px;
+  }
+
+  .navbar-mobile {
+    height: 35vh;
+  }
+
+  .navbar-logo {
+    height: 55px;
+  }
+}
