@@ -1,7 +1,24 @@
 .aboutSection {
+  position: relative;
   background-color: #f5f5f5;
   width: 100%;
   min-height: 592px;
+  overflow: hidden;
+}
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -50px; /* Move the image to the right side */
+  width: 350px;
+  height: 350px;
+  background-image: url("/images/lemononly.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
+  transform: scaleX(-1); /* Flip the image horizontally */
 }
 
 .aboutContainer {
@@ -109,7 +126,8 @@
     line-height: 28px;
   }
 
-  #restImg, #chefImg {
+  #restImg,
+  #chefImg {
     width: 200px;
     height: 275px;
   }
@@ -123,7 +141,6 @@
     right: calc(30% - 100px);
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .aboutContainer {
@@ -148,7 +165,8 @@
     line-height: 24px;
   }
 
-  #restImg, #chefImg {
+  #restImg,
+  #chefImg {
     width: 180px;
     height: 250px;
   }
@@ -169,7 +187,8 @@
     margin: 0 2rem;
   }
 
-  .aboutInfo, .aboutImgs {
+  .aboutInfo,
+  .aboutImgs {
     width: 100%;
   }
 
@@ -197,7 +216,8 @@
     margin-top: 2rem;
   }
 
-  #restImg, #chefImg {
+  #restImg,
+  #chefImg {
     width: 150px;
     height: 200px;
   }
