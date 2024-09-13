@@ -12,6 +12,7 @@ footer {
   overflow: hidden;
   bottom: 0;
   position: static;
+  z-index: 2;
 }
 
 .footerContainer {
