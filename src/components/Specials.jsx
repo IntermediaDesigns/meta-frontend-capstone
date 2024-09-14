@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "./specials.css";
 
 function Specials() {
@@ -55,7 +56,7 @@ function Specials() {
           </div>
           <div className="foodInfo">
             <p>
-              This comes straight from grandma’s recipe book, every last
+              This comes straight from grandma&apos;s recipe book, every last
               ingredient has been sourced and is as authentic as can be
               imagined.
             </p>
@@ -66,7 +67,8 @@ function Specials() {
           </div>
         </div>
       </div>
-      <button className="btn1" id="specialsBtn"><a href="/orderonline">Order Online</a>
+      <button className="btn1" id="specialsBtn">
+        <Link to="/orderonline">Order Online</Link>
       </button>
     </section>
   );
