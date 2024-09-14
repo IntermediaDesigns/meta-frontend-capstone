@@ -1,5 +1,5 @@
 import BookingForm from "../components/BookingForm";
-import "./styles/Reservations.css";
+import "./styles/reservations.css";
 
 const Reservations = () => {
   return (
