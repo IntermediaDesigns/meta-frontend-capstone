@@ -66,8 +66,7 @@ function Specials() {
           </div>
         </div>
       </div>
-      <button className="btn1" id="specialsBtn">
-        Order Online
+      <button className="btn1" id="specialsBtn"><a href="/orderonline">Order Online</a>
       </button>
     </section>
   );

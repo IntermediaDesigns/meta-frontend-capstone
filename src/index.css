@@ -44,6 +44,11 @@ button {
   background-color: #fde258;
 }
 
+.btn1 a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
 #btnLink2 {
   text-decoration: none;
   color: #fdfdfd;
