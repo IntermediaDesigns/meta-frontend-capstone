@@ -7,7 +7,7 @@ function Specials() {
       <div className="specialsContainer">
         <div className="specialBox">
           <div className="specialImg">
-            <img src="./images/greeksalad.jpg" alt="" />
+            <img className="foodImg" src="./images/greeksalad.jpg" alt="" />
           </div>
           <div className="foodHeader">
             <h2>Greek Salad</h2>
@@ -22,12 +22,12 @@ function Specials() {
           </div>
           <div className="orderHeader">
             <p>Order a delivery</p>
-            <img src="./images/DeliveryIcon.jpg" alt="" />
+            <img className="deliveryIcon" src="./images/DeliveryIcon.jpg" alt="" />
           </div>
         </div>
         <div className="specialBox">
           <div className="specialImg">
-            <img src="./images/Bruschetta.jpg" alt="" />
+            <img className="foodImg" src="./images/Bruschetta.jpg" alt="" />
           </div>
           <div className="foodHeader">
             <h2>Bruschetta</h2>
@@ -42,12 +42,12 @@ function Specials() {
           </div>
           <div className="orderHeader">
             <p>Order a delivery</p>
-            <img src="./images/DeliveryIcon.jpg" alt="delivery icon" />
+            <img className="deliveryIcon" src="./images/DeliveryIcon.jpg" alt="delivery icon" />
           </div>
         </div>
         <div className="specialBox">
           <div className="specialImg">
-            <img src="./images/lemondessert.jpg" alt="lemon dessert" />
+            <img className="foodImg" src="./images/lemondessert.jpg" alt="lemon dessert" />
           </div>
           <div className="foodHeader">
             <h2>Lemon Dessert</h2>
@@ -62,7 +62,7 @@ function Specials() {
           </div>
           <div className="orderHeader">
             <p>Order a delivery</p>
-            <img src="./images/DeliveryIcon.jpg" alt="delivery icon" />
+            <img className="deliveryIcon" src="./images/DeliveryIcon.jpg" alt="delivery icon" />
           </div>
         </div>
       </div>

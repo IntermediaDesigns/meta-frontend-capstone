@@ -9,7 +9,7 @@ function Testimonials() {
           <img src="./images/stars.png" alt="rating" />
           <p>
             “Little Lemon&rsquo;s authentic Mediterranean cuisine tantalized my
-            taste buds with its vibrant flavors and fresh ingredients. The cozy
+            taste buds and vibrant flavors and fresh ingredients. The cozy
             atmosphere and friendly staff made my dining experience truly
             memorable.”
           </p>
