@@ -1,0 +1,24 @@
+.reservations {
+    padding-top: 105px;
+    background-color: #e5ebe9;
+    width: 100%;
+    min-height: 71vh;
+}
+
+.reservationBanner {
+    background-color: #f4ce14;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.reservationBanner h1 {
+    font-size: 4rem;
+    color: #1e1e1e;
+    font-family: "Markazi Text", sans-serif;
+}
+
+.reservationBanner p {
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    font-family: "Karla", sans-serif;
+}
