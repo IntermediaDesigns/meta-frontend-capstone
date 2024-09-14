@@ -12,14 +12,19 @@ const LoginUnderConstruction = () => {
         </div>
         <h2 className="construction-title">Login Coming Soon!</h2>
         <p className="construction-message">
-          We&apos;re currently setting up a secure login system to enhance your Little Lemon experience.
+          We&apos;re currently setting up a secure login system to enhance your
+          Little Lemon experience.
         </p>
         <div className="features-list">
           <h3>Upcoming Features:</h3>
-          
+
           <div className="list">
-            <p><IoMail size={16} /> Order history</p>
-            <p><FaUnlockAlt size={16} /> Secure payments</p>
+            <p>
+              <IoMail size={16} /> Order history
+            </p>
+            <p>
+              <FaUnlockAlt size={16} /> Secure payments
+            </p>
           </div>
         </div>
         <div className="additional-info">

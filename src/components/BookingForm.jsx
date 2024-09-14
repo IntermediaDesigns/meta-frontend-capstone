@@ -14,7 +14,7 @@ const BookingForm = () => {
 
   useEffect(() => {
     // Initialize times for today's date when the component mounts
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toISOString().split("T")[0];
     initializeTimes(today);
   }, []);
 
@@ -104,7 +104,9 @@ const BookingForm = () => {
           >
             <option value="">Select a time</option>
             {availableTimes.map((time) => (
-              <option key={time} value={time}>{time}</option>
+              <option key={time} value={time}>
+                {time}
+              </option>
             ))}
           </select>
         </div>
