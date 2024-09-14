@@ -1,27 +1,47 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import "./navbar.css";
 import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToAbout = (event) => {
+    event.preventDefault();
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (isOpen) {
+      toggleMenu();
+    }
+  };
+
+  const goToHomeAndScrollTop = (event) => {
+    event.preventDefault();
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (isOpen) {
+      toggleMenu();
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/">
+        <Link to="/" onClick={goToHomeAndScrollTop}>
           <img id="logo" src={logo} alt="Logo" className="navbar-logo" />
         </Link>
         {/* Desktop Menu */}
         <div className="navbar-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <a href="/" onClick={goToHomeAndScrollTop}>Home</a>
+          <a href="#about" onClick={scrollToAbout}>About</a>
           <Link to="/menu">Menu</Link>
           <Link to="/reservations">Reservations</Link>
         </div>
@@ -45,12 +65,12 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <div className={`navbar-mobile ${isOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={toggleMenu}>
+        <a href="/" onClick={goToHomeAndScrollTop}>
           Home
-        </Link>
-        <Link to="#about" onClick={toggleMenu}>
+        </a>
+        <a href="#about" onClick={scrollToAbout}>
           About
-        </Link>
+        </a>
         <Link to="/menu" onClick={toggleMenu}>
           Menu
         </Link>
