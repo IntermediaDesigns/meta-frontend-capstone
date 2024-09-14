@@ -1,4 +1,4 @@
-import { FaUnlockAlt, FaUser } from "react-icons/fa";
+import { FaUnlockAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
 const LoginUnderConstruction = () => {
@@ -15,8 +15,8 @@ const LoginUnderConstruction = () => {
         </p>
         <div className="features-list">
           <h3>Upcoming Features:</h3>
+          
           <div className="list">
-            <p><FaUser size={16} /> Personalized profiles</p>
             <p><IoMail size={16} /> Order history</p>
             <p><FaUnlockAlt size={16} /> Secure payments</p>
           </div>
