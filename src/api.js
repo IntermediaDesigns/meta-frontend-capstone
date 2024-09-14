@@ -1,40 +1,49 @@
-// Function to check if the API is loaded
-function waitForAPI(timeout = 5000) {
-  return new Promise((resolve, reject) => {
-    const startTime = Date.now();
-    const checkAPI = () => {
-      if (typeof window.fetchAPI === 'function' && typeof window.submitAPI === 'function') {
-        resolve();
-      } else if (Date.now() - startTime > timeout) {
-        reject(new Error('API functions not available after timeout'));
-      } else {
-        setTimeout(checkAPI, 100);
-      }
-    };
-    checkAPI();
+// Mock implementation of fetchAPI
+function mockFetchAPI(date) {
+  // Simulate API delay
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      // Generate random available times
+      const times = ["17:00", "18:00", "19:00", "20:00", "21:00"].filter(() => Math.random() > 0.3);
+      resolve(times);
+    }, 1000);
+  });
+}
+
+// Mock implementation of submitAPI
+function mockSubmitAPI(formData) {
+  // Simulate API delay
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      // Simulate 90% success rate
+      const success = Math.random() < 0.9;
+      resolve(success);
+    }, 1000);
   });
 }
 
 // Wrapper for the fetchAPI function
 export async function fetchAPI(date) {
+  console.log('Fetching available times for:', date);
   try {
-    await waitForAPI();
-    return window.fetchAPI(date);
+    const times = await mockFetchAPI(date);
+    console.log('Available times:', times);
+    return times;
   } catch (error) {
     console.error('Error fetching API:', error);
-    // Return a default array of times as a fallback
     return ["17:00", "18:00", "19:00", "20:00", "21:00"];
   }
 }
 
 // Wrapper for the submitAPI function
 export async function submitAPI(formData) {
+  console.log('Submitting reservation:', formData);
   try {
-    await waitForAPI();
-    return window.submitAPI(formData);
+    const result = await mockSubmitAPI(formData);
+    console.log('Submission result:', result);
+    return result;
   } catch (error) {
     console.error('Error submitting API:', error);
-    // Return true as a fallback to simulate successful submission
     return true;
   }
 }

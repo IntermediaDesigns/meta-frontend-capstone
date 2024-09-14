@@ -1,3 +1,9 @@
-const Menu = () => <div>Our Menu</div>;
+import UnderConstructionMenu from '../components/UnderConstructionMenu'
 
-export default Menu;
+function Menu() {
+  return (
+    <UnderConstructionMenu />
+  )
+}
+
+export default Menu

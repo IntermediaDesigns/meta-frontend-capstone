@@ -1,0 +1,46 @@
+.under-construction-page {
+    min-height: 71vh;
+    background-color: #e5ebe9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  .content-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 24rem;
+    width: 100%;
+    text-align: center;
+  }
+  .restaurant-name {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #495e57;
+    margin-bottom: 1rem;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .construction-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .construction-message {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  .additional-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  .additional-info p {
+    margin: 0.5rem 0;
+  }
