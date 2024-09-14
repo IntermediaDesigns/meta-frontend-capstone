@@ -1,5 +1,6 @@
 import { FaUnlockAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import "./loginunderconstruction.css";
 
 const LoginUnderConstruction = () => {
   return (

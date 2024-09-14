@@ -1,7 +1,7 @@
 import lemononly from "/images/lemononly.png";
 import { BsArrowUpCircle, BsFacebook, BsTwitterX } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
-import "./Footer.css";
+import "./footer.css";
 
 export default function Footer() {
   return (

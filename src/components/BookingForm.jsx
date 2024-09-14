@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./BookingForm.css";
+import "./bookingform.css";
 import { fetchAPI, submitAPI } from "../api";
 
 const BookingForm = () => {
