@@ -4,9 +4,9 @@ import Menu from "./pages/Menu";
 import Reservations from "./pages/Reservations";
 import "./index.css";
 import Footer from "./components/Footer";
-import LandingPage from "./components/LandingPage";
 import Orderonline from "./pages/Orderonline";
 import Login from "./pages/Login";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
           <Route path="/orderonline" element={<Orderonline />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-        <LandingPage />
         <Footer />
       </div>
     </Router>

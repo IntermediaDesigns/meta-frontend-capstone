@@ -1,12 +1,14 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import "./navbar.css";
 import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [shouldScrollToAbout, setShouldScrollToAbout] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,14 +16,29 @@ const Navbar = () => {
 
   const scrollToAbout = (event) => {
     event.preventDefault();
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setShouldScrollToAbout(true);
+    } else {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     if (isOpen) {
       toggleMenu();
     }
   };
+
+  useEffect(() => {
+    if (shouldScrollToAbout && location.pathname === '/') {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      setShouldScrollToAbout(false);
+    }
+  }, [location, shouldScrollToAbout]);
 
   const goToHomeAndScrollTop = (event) => {
     event.preventDefault();

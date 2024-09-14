@@ -14,8 +14,8 @@ function AboutSection() {
           </p>
         </div>
         <div className="aboutImgs">
-          <img id="restImg" src="/images/restaurant.jpg" alt="restaurant" />
-          <img id="chefImg" src="/images/chef.jpg" alt="chef" />
+          <img id="restImg" src="./images/restaurant.jpg" alt="restaurant" />
+          <img id="chefImg" src="./images/chef.jpg" alt="chef" />
         </div>
       </div>
     </section>
